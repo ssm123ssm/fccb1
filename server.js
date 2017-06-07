@@ -34,7 +34,7 @@ app.get("/:val", function(req, res){
     
 });
 
-app.listen(80);
+app.listen(8080);
 
 function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
