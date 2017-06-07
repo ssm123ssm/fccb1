@@ -29,12 +29,12 @@ app.get("/:val", function(req, res){
         }
         
     }
-
+    
     res.send(ret);
     
 });
 
-app.listen(8080);
+app.listen(process.env.PORT);
 
 function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
